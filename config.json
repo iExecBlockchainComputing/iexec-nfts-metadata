@@ -1,0 +1,33 @@
+{
+	"chains":
+	{
+		"1":  { "name": "mainnet", "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3"        },
+		"5":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3-goerli" },
+		"42": { "name": "kovan",   "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3-kovan"  },
+		"_5": { "name": "goerli",  "subgraph": "/subgraphs/name/amxx/iexec-erc1538-goerli"                     }
+	},
+	"request":
+	{
+		"method": "POST",
+		"host":   "api.thegraph.com",
+		"port":   443
+	},
+	"ressources":
+	{
+		"app":
+		{
+			"query": "query App($tokenid: ID!){ app(id: $tokenid){ name type multiaddr checksum mrenclave }}",
+			"image": ""
+		},
+		"dataset":
+		{
+			"query": "query Dataset($tokenid: ID!){ dataset(id: $tokenid){ name multiaddr checksum }}",
+			"image": ""
+		},
+		"workerpool":
+		{
+			"query": "query Workerpool($tokenid: ID!){ workerpool(id: $tokenid){ description workerStakeRatio schedulerRewardRatio }}",
+			"image": ""
+		}
+	}
+}
