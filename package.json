@@ -1,13 +1,13 @@
 {
   "name": "iexec-nfts-metadata",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "iExec",
   "license": "MIT",
   "main": "server/index.js",
   "scripts": {
-		"build": "docker image build -f Dockerfile -t iexec-nfts-metadata:0.0.1 .",
-		"publish": "docker push iexec-nfts-metadata:0.0.1",
+    "build": "docker image build -f Dockerfile -t iexec-nfts-metadata:0.0.2 .",
+    "push": "docker push iexec-nfts-metadata:0.0.2",
     "start": "nodemon server/index.js"
   },
   "devDependencies": {
