@@ -1,13 +1,13 @@
 {
   "name": "iexec-nfts-metadata",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon server.js"
-  },
-  "author": "",
+  "author": "iExec",
   "license": "MIT",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "nodemon server/index.js"
+  },
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
