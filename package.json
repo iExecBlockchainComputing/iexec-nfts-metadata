@@ -6,12 +6,14 @@
   "license": "MIT",
   "main": "server/index.js",
   "scripts": {
+		"build": "docker image build -f Dockerfile -t iexec-nfts-metadata .",
     "start": "nodemon server/index.js"
   },
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
   "dependencies": {
+    "ethers": "^4.0.46",
     "express": "^4.17.1"
   }
 }
