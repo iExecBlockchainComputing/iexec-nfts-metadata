@@ -1,22 +1,26 @@
+'use strict';
+
 const express   = require('express');
-const endpoints = require('./api/endpoints');
+const config    = require('./config.json');
+const core      = require('./api/core');
+const formaters = require('./api/formaters');
 
 const app  = express();
 const port = process.env.PORT || 3000;
 
-app
-	.route('/app/:chainid/:tokenid')
-	.get(endpoints.app);
+for (const [id, params] of Object.entries(config.endpoints))
+{
+	app
+		.route(params.route)
+		.get(
+			core.submit(
+				params.query,
+				formaters[id](params),
+				config,
+			)
+		)
+}
 
-app
-	.route('/dataset/:chainid/:tokenid')
-	.get(endpoints.dataset);
-
-app
-	.route('/workerpool/:chainid/:tokenid')
-	.get(endpoints.workerpool);
-
-app
-	.listen(port);
+app.listen(port);
 
 console.log(`RESTful API server started on: ${port}`);

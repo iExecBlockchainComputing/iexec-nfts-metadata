@@ -12,20 +12,23 @@
 		"host":   "api.thegraph.com",
 		"port":   443
 	},
-	"ressources":
+	"endpoints":
 	{
 		"app":
 		{
+			"route": "/app/:chainid/:tokenid",
 			"query": "query App($tokenid: ID!){ app(id: $tokenid){ name type multiaddr checksum mrenclave }}",
 			"image": ""
 		},
 		"dataset":
 		{
+			"route": "/dataset/:chainid/:tokenid",
 			"query": "query Dataset($tokenid: ID!){ dataset(id: $tokenid){ name multiaddr checksum }}",
 			"image": ""
 		},
 		"workerpool":
 		{
+			"route": "/workerpool/:chainid/:tokenid",
 			"query": "query Workerpool($tokenid: ID!){ workerpool(id: $tokenid){ description workerStakeRatio schedulerRewardRatio }}",
 			"image": ""
 		}
