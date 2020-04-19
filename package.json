@@ -6,8 +6,8 @@
   "license": "MIT",
   "main": "server/index.js",
   "scripts": {
-    "build": "docker image build -f Dockerfile -t iexec-nfts-metadata:0.0.2 .",
-    "push": "docker push iexec-nfts-metadata:0.0.2",
+    "build": "docker image build -f Dockerfile -t iexechub/nfts-metadata:0.0.2 .",
+    "push": "docker push iexechub/nfts-metadata:0.0.2",
     "start": "nodemon server/index.js"
   },
   "devDependencies": {
