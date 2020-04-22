@@ -1,8 +1,7 @@
 FROM node:11-alpine
 
 COPY ./package.json /package.json
-COPY ./server       /server
-
-RUN npm install
+RUN npm install --no-progress
+COPY ./server /server
 
 ENTRYPOINT ["npm", "start"]
