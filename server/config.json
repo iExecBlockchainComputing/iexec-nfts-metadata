@@ -1,10 +1,10 @@
 {
 	"chains":
 	{
-		"1":  { "name": "mainnet", "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3"        },
-		"5":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3-goerli" },
-		"42": { "name": "kovan",   "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v3-kovan"  },
-		"_5": { "name": "goerli",  "subgraph": "/subgraphs/name/amxx/iexec-erc1538-goerli"                     }
+		"1":  { "name": "mainnet", "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5"         },
+		"4":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-rinkeby" },
+		"5":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-goerli"  },
+		"42": { "name": "kovan",   "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-kovan"   }
 	},
 	"request":
 	{
