@@ -1,7 +1,7 @@
 'use strict';
 
 const express   = require('express');
-const config    = require('./config.json');
+const config    = require(process.env.CONFIG || './config.json');
 const core      = require('./api/core');
 const formaters = require('./api/formaters');
 

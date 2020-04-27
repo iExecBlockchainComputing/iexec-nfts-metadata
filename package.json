@@ -8,10 +8,10 @@
   "scripts": {
     "build": "docker image build -f Dockerfile -t iexechub/nfts-metadata:0.0.4 .",
     "push": "docker push iexechub/nfts-metadata:0.0.4",
-		"start": "node server/index.js"
+    "start": "node server/index.js"
   },
   "dependencies": {
-    "ethers": "^4.0.46",
+    "ethers": "^4.0.47",
     "express": "^4.17.1"
   }
 }
