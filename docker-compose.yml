@@ -1,0 +1,21 @@
+version: '3'
+services:
+
+  nfts-metadata:
+    image: graphprotocol/graph-node
+    restart: always
+    ports:
+      - '3000:3000'
+
+  nginx:
+    image: nginx
+    restart: always
+    ports:
+      - '80:80'
+      - '443:443'
+    depends_on:
+      - nfts-metadata
+    volumes:
+      - ./nginx:/etc/nginx
+      - /etc/letsencrypt:/etc/letsencrypt
+    command: /bin/bash -c 'sleep 10; nginx -g "daemon off;"'
