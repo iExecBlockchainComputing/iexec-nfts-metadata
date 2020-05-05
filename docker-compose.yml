@@ -4,8 +4,11 @@ services:
   nfts-metadata:
     image: iexechub/nfts-metadata:0.0.5
     restart: always
-    ports:
-      - '80:3000'
+    volumes:
+      - ./server:/mnt
+    environment:
+      CONFIG: /mnt/config.json
+
 
   nginx:
     image: nginx
@@ -16,5 +19,5 @@ services:
       - nfts-metadata
     volumes:
       - ./nginx:/etc/nginx
+      - ./assets:/mnt/assets
       - /etc/letsencrypt:/etc/letsencrypt
-    command: /bin/bash -c 'sleep 10; nginx -g "daemon off;"'

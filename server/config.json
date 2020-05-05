@@ -18,19 +18,19 @@
 		{
 			"route": "/app/:chainid/:tokenid",
 			"query": "query App($tokenid: ID!){ app(id: $tokenid){ id name type multiaddr checksum mrenclave }}",
-			"image": ""
+			"image": "https://nfts-metadata.iex.ec/assets/app.svg"
 		},
 		"dataset":
 		{
 			"route": "/dataset/:chainid/:tokenid",
 			"query": "query Dataset($tokenid: ID!){ dataset(id: $tokenid){ id name multiaddr checksum }}",
-			"image": ""
+			"image": "https://nfts-metadata.iex.ec/assets/dataset.svg"
 		},
 		"workerpool":
 		{
 			"route": "/workerpool/:chainid/:tokenid",
 			"query": "query Workerpool($tokenid: ID!){ workerpool(id: $tokenid){ id description workerStakeRatio schedulerRewardRatio }}",
-			"image": ""
+			"image": "https://nfts-metadata.iex.ec/assets/workerpool.svg"
 		}
 	}
 }
