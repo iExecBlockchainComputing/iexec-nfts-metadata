@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "ethers": "^4.0.47",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "url": "^0.11.0"
   }
 }

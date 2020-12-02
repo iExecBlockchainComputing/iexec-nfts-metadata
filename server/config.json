@@ -1,16 +1,11 @@
 {
 	"chains":
 	{
-		"1":  { "name": "mainnet", "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5"         },
-		"4":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-rinkeby" },
-		"5":  { "name": "goerli",  "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-goerli"  },
-		"42": { "name": "kovan",   "subgraph": "/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-kovan"   }
-	},
-	"request":
-	{
-		"method": "POST",
-		"host":   "api.thegraph.com",
-		"port":   443
+		"1":   { "name": "mainnet",   "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5"           },
+		"5":   { "name": "goerli",    "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-goerli"    },
+		"42":  { "name": "kovan",     "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-kovan"     },
+		"133": { "name": "viviani",   "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-viviani"   },
+		"134": { "name": "bellecour", "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-bellecour" }
 	},
 	"endpoints":
 	{
