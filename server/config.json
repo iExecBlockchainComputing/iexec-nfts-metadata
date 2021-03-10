@@ -1,8 +1,8 @@
 {
 	"chains":
 	{
-		"1":   { "name": "mainnet",   "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5"           },
-		"5":   { "name": "goerli",    "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-goerli"    },
+		"1":   { "name": "mainnet",   "subgraph": "https://api.thegraph.com/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5"           },
+		"5":   { "name": "goerli",    "subgraph": "https://api.thegraph.com/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-goerli"    },
 		"42":  { "name": "kovan",     "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-kovan"     },
 		"133": { "name": "viviani",   "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-viviani"   },
 		"134": { "name": "bellecour", "subgraph": "https://thegraph.redirect.iex.ec/subgraphs/name/iexecblockchaincomputing/iexec-poco-v5-bellecour" }
